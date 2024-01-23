@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instalación de SASS y Gulp</title>
+ <link rel="shortcut icon" href="./src/img/sass_icon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./build/css/app.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__contenedor">
+      <div class="header__barra ">
+        <div class="header__logo mb-2">
+          <img src="./src/img/sass_icon.svg" alt="imagen sass" width="400" height="400" />
+          <p class="header__textoMas">+</p>
+          <img src="./src/img/gulp_icon.svg" alt="imagen gulp" width="400" height="400" />
+        </div>
+
+        <nav class="navegacion">
+          <ul class="listado__nav">
+            <li class="lista__nav">
+              <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" title="Ir Node.js">Ir a
+                Node.js</a>
+            </li>
+            <li class="lista__nav">
+              <a href="https://sass-lang.com/install/" target="_blank" rel="noopener noreferrer" title="Ir a SASS">Ir a
+                SASS</a>
+            </li>
+            <li class="lista__nav">
+              <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer" title="Ir npm">
+                Ir a NPM</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main mb-5">
+    <div class="main__contenedor">
+      <h1 class="main__heading">
+        Instrucciones de Instalación para Node.js y Gulp:
+      </h1>
+
+      <div class="instrucciones__grid">
+        <div class="instruccion">
+          <h2 class="instruccion__heading">Paso 1: Instala Node.js</h2>
+
+          <p class="instruccion__texto">
+            Asegúrate de tener Node.js instalado en tu sistema. Puedes
+            descargar la última versión desde el sitio web oficial:
+            <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" title="Ir Node.js">Node.js</a>
+          </p>
+        </div>
+
+        <div class="instruccion">
+          <h2 class="instruccion__heading">
+            Paso 2:Verifica la instalación de Node.js, npm y npx
+          </h2>
+
+          <p class="instruccion__texto">
+            Abre tu terminal y ejecuta los siguientes comandos para asegurarte
+            de que Node.js, npm y npx estén instalados correctamente:
+          </p>
+
+          <p class="instruccion__texto">
+            Este comando mostrará la versión de Node.js instalada.
+          </p>
+          <code class="instruccion__code">node -v</code>
+
+          <p class="instruccion__texto">
+            Este comando mostrará la versión de NPM instalada.
+          </p>
+          <code class="instruccion__code">npm -v</code>
+
+          <p class="instruccion__texto">
+            Este comando mostrará la versión de NPX instalada.
+          </p>
+          <code class="instruccion__code">npx -v</code>
+        </div>
+
+        <div class="instruccion">
+          <h2 class="instruccion__heading">
+            Paso 3: Instala Gulp de forma global
+          </h2>
+
+          <p class="instruccion__texto">
+            Utiliza el siguiente comando para instalar Gulp globalmente en tu
+            sistema:
+          </p>
+
+          <code class="instruccion__code">npm install --global gulp-cli
+            </code>
+        </div>
+
+        <div class="instruccion">
+          <h2 class="instruccion__heading">
+            Paso 4: Verifica la instalación de Gulp
+          </h2>
+
+          <p class="instruccion__texto">
+            Confirma que Gulp se ha instalado correctamente ejecutando el
+            siguiente comando:
+          </p>
+          <code class="instruccion__code">gulp -v </code>
+        </div>
+
+        <div class="instruccion">
+          <h2 class="instruccion__heading">
+            Paso 5: Inicia npm en tu Proyecto y Verifica tu archivo
+            package.json
+          </h2>
+
+          <p class="instruccion__texto">
+            Después de haber instalado Node.js y Gulp, es esencial iniciar npm
+            en tu proyecto para gestionar las dependencias. Asegúrate de estar
+            en el directorio de tu proyecto y ejecuta los siguientes comandos
+            en tu terminal:
+          </p>
+
+          <code class="instruccion__code">npm init</code>
+
+          <p class="instruccion__texto">
+            Ahora, abre tu archivo package.json y asegúrate de que contenga la
+            información correcta. Un ejemplo básico podría ser similar al
+            siguiente:
+          </p>
+
+          <div class="instruccion__imagen">
+            <img src="./src/img/package.png" alt="imagen package.json" width="400" height="400" />
+          </div>
+
+          <p class="instruccion__texto">
+            Asegúrate de personalizar la información según las necesidades de
+            tu proyecto.
+          </p>
+          <p class="instruccion__texto">
+            Este paso es crucial porque Gulp y otras herramientas a menudo se
+            integran con npm para gestionar las tareas del proyecto. Al tener
+            un archivo
+            <span class="instruccion__archivo"> package.json</span>
+            correctamente configurado, garantizas que las dependencias se
+            manejen de manera eficiente.
+          </p>
+        </div>
+
+        <div class="instruccion">
+          <h2 class="instruccion__heading">
+            Paso 6: Instala Gulp Localmente y Verifica el Archivo
+            <span class="instruccion__archivo"> package-lock.json</span>
+          </h2>
+
+          <p class="instruccion__texto">
+            Para instalar Gulp localmente en tu proyecto y asegurarte de que
+            se refleje en el archivo
+            <span class="instruccion__archivo"> package-lock.json </span>,
+            sigue estos pasos:
+          </p>
+          <code class="instruccion__code">npm install --save-dev gulp </code>
+
+          <p class="instruccion__texto">
+            Este comando instalará Gulp como una dependencia de desarrollo
+            (devDependencies) y actualizará tu archivo
+            <span class="instruccion__archivo"> package.json</span> y
+            <span class="instruccion__archivo"> package-lock.json </span>automáticamente.
+          </p>
+
+          <p class="instruccion__texto">
+            Asegúrate de que tu archivo package.json ahora incluya la sección
+            devDependencies con Gulp:
+          </p>
+          <div class="instruccion__imagen">
+          <img src="./src/img/dependencia_gulp.png" alt="imagen dependencia-gulp" width="400" height="400" />
+          </div>
+          <p class="instruccion__texto">
+            Este paso asegura que Gulp esté instalado localmente en tu
+            proyecto y que las versiones exactas se registren en el archivo
+            <span class="instruccion__archivo"> package-lock.json.</span>
+            Además, la carpeta
+            <span class="instruccion__archivo"> node_modules </span> debería
+            haber sido creada en tu directorio de proyecto.
+          </p>
+
+          <p class="instruccion__texto">
+            Finalmente, verifica que la instalación de Gulp haya sido exitosa
+            ejecutando:
+          </p>
+          <code class="instruccion__code">gulp -v </code>
+
+          <p class="instruccion__texto">
+            Este comando mostrará la versión de Gulp que se ha instalado
+            localmente en tu proyecto. Ahora estás listo para comenzar a
+            configurar y utilizar Gulp en tu entorno de desarrollo
+          </p>
+        </div>
+
+        <div class="instruccion">
+          <h2 class="instruccion__heading">Paso 1: Instala Node.js</h2>
+
+          <p class="instruccion__texto">
+            Asegúrate de tener Node.js instalado en tu sistema. Puedes
+            descargar la última versión desde el sitio web oficial:
+          </p>
+        </div>
+      </div>
+      <!--Instrucciones grid-->
+    </div>
+  </main>
+
+  <section class="gulp  mb-5">
+    <div class="gulp__contenedor">
+      <h1 class="gulp__heading">Configuración de Gulp y SASS</h1>
+
+      <div class="gulp__grid">
+        <div class="gulp__instruciones">
+          <h2 class="instruccion__heading">1 Crear el Archivo gulpfile.js</h2>
+          <p class="gulp__texto">
+            Crea un nuevo archivo en la raíz de tu proyecto llamado
+            gulpfile.js. Este archivo contendrá la configuración y las tareas
+            de Gulp para tu proyecto.
+          </p>
+          <p class="gulp__texto">
+            Este es un ejemplo simple de un gulpfile.js con una tarea básica
+            llamada <i> primerTarea</i>. Puedes personalizar este archivo
+            según las necesidades específicas de tu proyecto.
+          </p>
+
+          <div class="instruccion__imagen">
+            <img src="./src/img/primer_tarea.png" alt="imagen de tarea gulp" width="400" height="400" />
+          </div>
+
+          <p class="gulp__texto">
+            Ejecuta en terminal el siguiente comando para comprobar la
+            ejecución de gulp
+          </p>
+
+          <code class="instruccion__code">gulp primerTarea </code>
+
+          <div class="instruccion__imagen">
+            <img src="./src/img/terminal_tarea.png" alt="imagen de la terminal " width="400" height="400" />
+          </div>
+        </div>
+        <div class="gulp__instruciones">
+          <h2 class="instruccion__heading"> 2 Crea la estructura del Proyecto para SASS</h2>
+          <p class="gulp__texto">Antes de instalar gulp-sass, sigamos con la estructura del proyecto. Vamos a crear la
+            carpeta src y dentro de ella la carpeta scss. Dentro de la carpeta scss, crearemos un archivo llamado
+            app.scss. Aquí está cómo podrías organizar tu proyecto:</p>
+
+          <div class="instruccion__imagen">
+
+            <img src="./src/img/estructura_sass.png" alt="estructura sass" width="400" height="400">
+          </div>
+
+
+        </div>
+        <div class="gulp__instruciones">
+          <h2 class="instruccion__heading"> 3 Instalar Plugins de Gulp según tus Necesidades</h2>
+          <p class="gulp__texto">Dependiendo de tus requisitos, puedes instalar plugins de Gulp para realizar diversas
+            tareas, como compilar SASS, minificar archivos, y más. Aquí hay un ejemplo de cómo instalar el plugin de
+            compilación de SASS:</p>
+
+          <code class="instruccion__code">npm install --save-dev sass gulp-sass
+            </code>
+
+
+        </div>
+        <div class="gulp__instruciones">
+          <h2 class="instruccion__heading"> 4 Compilación de SASS con Gulp</h2>
+          <p class="gulp__texto">Ahora, agreguemos siguiente tarea para ejecutar la compilacion . El siguiente código es
+            un ejemplo para ejecutar la tarea gulpfile.js </p>
+
+          <div class="instruccion__imagen">
+
+            <img src="./src/img/compilacion.png" alt="compilar sass" width="400" height="400">
+          </div>
+
+
+
+        </div>
+        <div class="gulp__instruciones">
+          <h2 class="instruccion__heading"> 5 Enlace del Archivo CSS en HTML y Ejecución de la Tarea Gulp</h2>
+          <p class="gulp__texto">Añade el siguiente enlace dentro de la sección
+
+            <head> de tu archivo HTML para incluir el archivo CSS compilado:
+          </p>
+
+          <div class="instruccion__imagen">
+
+            <img src="./src/img/enlace_css.png" alt="compilar sass" width="400" height="400">
+          </div>
+
+          <p class="gulp__texto">Despues asegúrate de ejecutar la tarea de Gulp para compilar tus estilos. Puedes
+            hacerlo escribiendo el siguiente comando en tu terminal:</p>
+
+          <code class="instruccion__code">gulp</code>
+
+          <p class="gulp__texto">Este comando ejecutará la tarea predeterminada (en nuestro caso, la tarea css), y tus
+            estilos SASS se compilarán en el archivo build/css/app.css. Luego, esos estilos se aplicarán a tu página
+            HTML.</p>
+          <p class="gulp__texto">Después de ejecutar la tarea de Gulp, abre tu archivo HTML en un navegador web y
+            verifica que los estilos se apliquen correctamente. ¡Deberías ver los cambios reflejados en tu página!.</p>
+
+
+
+        </div>
+
+
+
+
+
+
+      </div><!--Gulp grid-->
+    </div>
+  </section>
+
+
+
+  <section class="watch mb-5">
+
+    <div class="watch__contenedor">
+
+      <h1 class="watch__heading">Añadiendo Watch y Otros Plugins</h1>
+      <div class="watch__grid">
+
+
+
+        <div class="watch__instruciones">
+          <h2 class="instruccion__heading">1. Funciones y Plugins Adicionales</h2>
+
+          <p class="watch__texto">La función `watch` integrada en Gulp se utiliza para observar cambios en archivos
+            específicos y ejecutar tareas automáticamente cuando se detectan modificaciones. En el contexto de tu
+            proyecto, esta función se emplea para monitorizar cambios en el archivo SASS (`app.scss`) y ejecutar
+            automáticamente la tarea de compilación de CSS (`css`) al guardar modificaciones.</p>
+
+          <p class="watch__texto">gulp-plumber es un middleware de Gulp que evita que la ejecución de la tarea se
+            detenga
+            cuando ocurren errores. En lugar de salir abruptamente, plumber captura los errores y permite que la
+            ejecución
+            de Gulp continúe, proporcionando información sobre los errores en la consola.</p>
+
+          <code class="instruccion__code">npm i -D gulp-plumber</code>
+
+          <p class="watch__texto">gulp-postcss es un plugin que permite el procesamiento de CSS con varias herramientas,
+            en lugar de solo SASS. Se utiliza para aplicar una serie de transformaciones al CSS después de ser
+            compilado,
+            y se puede combinar con diferentes plugins para realizar tareas específicas, como autoprefijado.
+          <p class="watch__texto">Este plugin de PostCSS, específicamente autoprefixer, se utiliza para agregar
+            automáticamente prefijos de proveedores a las propiedades CSS. Ayuda a garantizar la compatibilidad con
+            navegadores antiguos al agregar automáticamente los prefijos necesarios para las reglas CSS que requieren
+            prefijos de proveedores diferentes.
+          </p>
+
+
+
+
+          <code class="instruccion__code">npm i --save-dev autoprefixer gulp-postcss </code>
+
+
+
+
+          <div class="instruccion__imagen">
+
+            <img src="./src/img/plugins.png" alt="imagen plugins" width="400" height="400">
+
+
+          </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+  </section>
+
+ 
+</body>
+
+</html>

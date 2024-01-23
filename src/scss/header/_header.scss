@@ -1,0 +1,73 @@
+@use '../base/variables' as v;
+
+
+.header{
+
+    width: 100%;
+    background-color: v.$header;
+
+
+    .header__contenedor{
+        background-color: v.$header;
+        padding: 0;
+    }
+
+    .header__barra{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0;
+
+    }
+
+    .header__textoMas{
+        font-size: 8rem;
+        margin: 0 1rem;
+        color: v.$blanco;
+    }
+
+
+    @media (min-width: v.$tablet){
+
+        .header__barra{
+
+       flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        gap: v.$separacion;
+
+        
+
+        }
+
+        .header__textoMas{
+            font-size: 10rem;
+           
+        }
+    
+    }
+    
+
+
+    .header__logo{
+
+          display: flex;
+  
+    }
+
+    .header__logo img{
+        width: 15rem;
+        height: auto;
+
+    }
+    
+
+   
+
+   
+
+}
+
+
+

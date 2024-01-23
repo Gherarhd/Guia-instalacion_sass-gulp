@@ -1,0 +1,15 @@
+@use '../base/variables' as v;
+
+.instruccion__code{
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 1rem 0 3rem 0 ;
+    background-color: v.$header;
+}
+
+.instruccion__imagen img{
+width: 100%;
+height: auto;
+}

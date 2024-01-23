@@ -1,0 +1,29 @@
+@use '../base/variables' as v;
+
+.navegacion{
+
+    .listado__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        }
+
+        .lista__nav{
+            
+            font-size: 2rem;
+        }
+
+           @media (min-width: v.$tablet){
+            .listado__nav{
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                gap: 4rem;
+            }
+           }
+
+
+
+}
